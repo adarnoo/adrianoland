@@ -36,6 +36,7 @@ h9 {
   right: 10%;
   width: 100%;
   transform: rotate(180deg);
+  z-index: 99;
 }
 
 .ao-works-container {
@@ -205,7 +206,6 @@ h9 {
     width: 90%;
     margin: 0 5%;
     top: 10%;
-
   }
 
   h9 {

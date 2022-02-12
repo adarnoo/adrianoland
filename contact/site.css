@@ -75,24 +75,6 @@ h9 {
   animation-fill-mode: forwards;
 }
 
-@keyframes loading {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes flashing-text {
-  50% {
-    color: transparent;
-  }
-  100% {
-    color: black;
-  }
-}
-
 .website-link-one {
   position: absolute;
   top: 0;
@@ -120,12 +102,30 @@ h9 {
   animation-iteration-count: infinite;
 }
 
+.website-link-four {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  animation-name: four;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
 @keyframes loading {
   0% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes flashing-text {
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: black;
   }
 }
 
@@ -195,6 +195,29 @@ h9 {
   100% {
     top: 20%;
     left: 70%;
+  }
+}
+
+@keyframes four {
+  0% {
+    top: 40%;
+    left: 10%;
+  }
+  25% {
+    top: 20%;
+    left: 40%;
+  }
+  50% {
+    top: 80%;
+    left: 30%;
+  }
+  75% {
+    top: 10%;
+    left: 70%;
+  }
+  100% {
+    top: 40%;
+    left: 10%;
   }
 }
 

@@ -50,6 +50,12 @@ a:visited {
   width: 100%;
 }
 
+.ao-text-container {
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  color: white;
+}
+
 .ao-star-container-one {
   position: fixed;
   width: 3%;
@@ -231,7 +237,153 @@ a:visited {
   }
 
   .ao-star-container-one {
-    width: 5%;
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 20px;
+    animation-name: flash;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  .ao-star-container-two {
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 65px;
+    animation-name: flash;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  .ao-star-container-three {
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 95px;
+    animation-name: flash;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+  }
+
+  .ao-star-container-four {
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 115px;
+    animation-name: flash;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .ao-star-container-five {
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 135px;
+    animation-name: flash;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .ao-star-container-six {
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 180px;
+    animation-name: flash;
+    animation-duration: 5.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .ao-star-container-seven {
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 250px;
+    animation-name: flash;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+
+  .ao-star-container-eight {
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 285px;
+    animation-name: flash;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  .ao-star-container-nine {
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 300px;
+    animation-name: flash;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .ao-star-container-ten {
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 340px;
+    animation-name: flash;
+    animation-duration: 5.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .ao-star-container-eleven {
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 350px;
+    animation-name: flash;
+    animation-duration: 6.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .ao-star-container-twelve {
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 370px;
+    animation-name: flash;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+  }
+
+  .ao-star-container-thirteen {
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 3950px;
+    animation-name: flash;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .ao-star-container-fourteen {
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 405px;
+    animation-name: flash;
+    animation-duration: 7.5s;
+    animation-iteration-count: infinite;
+  }
+
+  .ao-star-container-fifthteen {
+    position: fixed;
+    width: 10%;
+    top: 200px;
+    left: 420px;
+    animation-name: flash;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
   }
 
 }

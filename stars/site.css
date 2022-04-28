@@ -56,6 +56,27 @@ a:visited {
   color: white;
 }
 
+.ao-star-container-moving {
+  position: fixed;
+  width: 3%;
+  top: 20%
+  right: 10%;
+  animation-name: star-one;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes star-one {
+  from {
+    top: 20%;
+    right: 10%
+  }
+  to {
+    top: 50%;
+    right: 90%;
+  }
+}
+
 .ao-star-container-one {
   position: fixed;
   width: 3%;
@@ -234,6 +255,10 @@ a:visited {
     width: 30%;
     right: 30px;
     bottom: 75px;
+  }
+
+  .ao-star-container-moving {
+    width: 10%;
   }
 
   .ao-star-container-one {

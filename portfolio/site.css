@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: helvetica;
+  font-size: 20px;
+  font-weight: lighter;
+  background-color: lightgrey;
+}
+
+@font-face {
+  font-family: 'CMU Normal';
+  src: url('../typefaces/cmu-normal.ttf') format('truetype');
+  font-display: block;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CMU Italic';
+  src: url('../typefaces/cmu-italic.ttf') format('truetype');
+  font-display: block;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:visited {
+}
+
+.ao-page {
+  position: relative;
+}
+
+.ao-header-container {
+  position: fixed;
+  top: 50px;
+  left: 25px;
+  font-family: "CMU Italic";
+  font-size: 30px;
+  margin-bottom: 25px;
+  width: 200px;
+}
+
+.ao-main-content-container {
+  margin: 50px 300px 0 300px;
+}
+
+.ao-text-container {
+  font-family: "CMU Italic";
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.normal {
+  font-family: "CMU Normal";
+}
+
+.ao-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.ao-image-container--bottom {
+  padding-bottom: 50px;
+}
+
+.ao-image {
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+.ao-image--medium-width {
+  width: 70%;
+  margin: 0 15%;
+  margin-bottom: 10px;
+}
+
+.ao-image--full-width {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.ao-video-margin {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.ao-star-container {
+  position: fixed;
+  width: 3%;
+  top: 20%
+  right: 10%;
+  animation-name: star-one;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes star-one {
+  from {
+    top: 20%;
+    right: 10%
+  }
+  to {
+    top: 50%;
+    right: 90%;
+  }
+}

@@ -6,12 +6,28 @@ body {
   font-family: helvetica;
   font-size: 20px;
   font-weight: lighter;
-  background-color: #07BF00;
+  background-color: lightgrey;
+}
+
+@font-face {
+  font-family: 'CMU Normal';
+  src: url('./typefaces/cmu-normal.ttf') format('truetype');
+  font-display: block;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CMU Italic';
+  src: url('./typefaces/cmu-italic.ttf') format('truetype');
+  font-display: block;
+  font-weight: normal;
+  font-style: normal;
 }
 
 a {
-  text-decoration: none;
-  color: #F0F0F0;
+  text-decoration: underline;
+  color: black;
 }
 
 img {
@@ -19,61 +35,68 @@ img {
 }
 
 a:hover {
-  cursor: pointer;
-  text-shadow: 0px 0px 10px white;
+  color: blue;
+  text-shadow: 0px 0px 10px blue;
 }
 
 a:visited {
-  color: #F0F0F0;
 }
 
 .ao-page {
   position: relative;
 }
 
-.ao-main-content {
-  padding: 30px;
-}
-
-.ao-header-map-container {
+.ao-header-container {
   position: fixed;
-  width: 15%;
-  right: 30px;
-  bottom: 30px;
+  top: 20px;
+  left: 25px;
+  font-family: "CMU Normal";
+  font-size: 30px;
+  margin-bottom: 25px;
+  list-style: none;
 }
 
-.ao-map-image {
-  box-shadow: 0 0 15px 7px rgba(161,217,242);
-}
-
-.ao-image-xsmall {
-  width: 15%;
-  padding-bottom: 15px;
-}
-
-.ao-image-small {
-  width: 25%;
-  padding-bottom: 15px;
-}
-
-.ao-image-medium {
-  width: 35%;
-  padding-bottom: 15px;
-}
-
-.ao-images-scroll-container {
-  width: 100%;
+.ao-main-content-container {
+  margin: 20px 300px 0 300px;
 }
 
 .ao-text-container {
-  padding-bottom: 15px;
-  text-transform: uppercase;
-  color: white;
-  cursor: pointer;
+  font-family: "CMU Normal";
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
 }
 
-.ao-image-bottom {
-  padding-bottom: 0;
+.ao-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.bottom {
+  padding-bottom: 50px;
+}
+
+.ao-image {
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+.ao-image--medium-width {
+  width: 70%;
+  margin: 0 15%;
+  margin-bottom: 10px;
+}
+
+.ao-image--full-width {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.ao-video-margin {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .ao-star-container {
@@ -84,7 +107,6 @@ a:visited {
   animation-name: star-one;
   animation-duration: 80s;
   animation-iteration-count: infinite;
-  /* animation-timing-function: ease-in-out; */
 }
 
 @keyframes star-one {
@@ -102,38 +124,30 @@ a:visited {
 (max-device-width: 480px) and
 (-webkit-min-device-pixel-ratio: 2) {
 
-  body {
-    font-size: 50px;
+  .ao-header-container {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    margin-bottom: 25px;
   }
 
-  .ao-header-map-container {
-    position: fixed;
-    width: 30%;
-    right: 30px;
-    bottom: 75px;
-  }
-
-  .ao-image-xsmall {
-    width: 35%;
-    padding-bottom: 15px;
-  }
-
-  .ao-image-small {
-    width: 45%;
-    padding-bottom: 15px;
-  }
-
-  .ao-image-medium {
-    width: 55%;
-    padding-bottom: 15px;
-  }
-
-  .ao-image-bottom {
-    padding-bottom: 50px;
+  .ao-main-content-container {
+    margin: 200px 50px 0 50px;
   }
 
   .ao-star-container {
-    width: 5%;
+    display: none;
+  }
+
+  .ao-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 200px;
+  }
+
+  .bottom {
+    padding-bottom: 200px;
   }
 
 }

@@ -125,10 +125,11 @@ a:visited {
 (-webkit-min-device-pixel-ratio: 2) {
 
   .ao-header-container {
-    position: relative;
+    position: none;
     top: 50px;
     left: 50px;
     margin-bottom: 25px;
+    font-size: 40px;
   }
 
   .ao-main-content-container {

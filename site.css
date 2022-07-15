@@ -5,7 +5,6 @@ body {
   height: 100%;
   font-family: helvetica;
   font-size: 20px;
-  font-weight: lighter;
   background-color: lightgrey;
 }
 
@@ -124,6 +123,16 @@ a:visited {
   }
 }
 
+.hd-link {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 5px 20px;
+  font-size: 80px;
+  background: linear-gradient(to right, rgb(0, 54, 4) 0%, rgba(0, 0, 0, 0) 63%, rgb(25, 233, 107) 100%);
+  text-align: center;
+  margin: 0 auto;
+}
+
 @media only screen and (min-device-width: 320px) and
 (max-device-width: 480px) and
 (-webkit-min-device-pixel-ratio: 2) {
@@ -135,7 +144,7 @@ a:visited {
   .ao-header-container-mobile {
     display: block;
     font-family: "CMU Normal";
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 100px;
     list-style: none;
     text-align: center;
